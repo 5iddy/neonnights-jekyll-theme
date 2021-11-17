@@ -1,0 +1,24 @@
+{
+  "name": "neonnights-jekyll-theme",
+  "version": "0.1.0",
+  "description": "A Neon Theme built upon Bulma CSS framwork for cyberpunks",
+  "main": "_js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/5iddy/neonnights-jekyll-theme.git"
+  },
+  "keywords": [
+    "jekyll",
+    "theme",
+    "neonnights",
+    "neon",
+    "bulma",
+    "minimal",
+    "simple"
+  ],
+  "author": "Siddhu Yeturi",
+  "license": "ISC"
+}

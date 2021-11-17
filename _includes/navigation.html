@@ -1,0 +1,27 @@
+<nav id="NavBar" class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <div class="navbar-item">
+            <a href="{{ site.url }}" class="title is-2" style="font-family: Rampart One;">
+                {{ site.title }}
+            </a>
+        </div>
+        {% if site.data.navigation %}
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" v-on:click="showMenu"
+            data-target="navbarMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        {% endif %}
+    </div>
+    {% if site.data.navigation %}
+    <div id="navbarMenu" class="navbar-menu">
+        {% for item in site.data.navigation %}
+        <a href="{{ item.link }}"
+            class="navbar-item has-text-centered {% if page.url contains item.link %}is-active{% endif %}">
+            {{ item.name }}
+        </a>
+        {% endfor %}
+    </div> <!-- end of navbar-menu -->
+    {% endif %}
+</nav> <!-- end of navbar -->
