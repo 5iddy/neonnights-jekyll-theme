@@ -4,7 +4,7 @@ import { copyToClipboard } from "./utils"
 const navbarBurgers = document.querySelectorAll('.navbar-burger');
 
 // Add a click event on each of them
-navbarBurgers.forEach( el => {
+navbarBurgers.forEach(el => {
   el.addEventListener('click', () => {
 
     // Get the target from the "data-target" attribute
@@ -20,7 +20,7 @@ const codeBlocks = document.querySelectorAll("pre.highlight")
 
 codeBlocks.forEach(el => {
   const button = document.createElement('button')
-  button.classList.add('button', 'is-info', 'is-outlined','is-small', 'bd-copy')
+  button.classList.add('button', 'is-info', 'is-outlined', 'is-small', 'bd-copy')
   button.type = 'button'
   // button.innerText = 'Copy'
 

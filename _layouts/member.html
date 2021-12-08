@@ -1,19 +1,13 @@
 ---
 layout: default
 ---
-<section class="hero is-medium has-text-centered
-{% unless page.image-url %}
-    is-primary
-{% endunless%}
-" 
-style="
-    {% if page.image-url %}
+<section {% unless page.image-url %} class="hero is-medium has-text-centered is-primary" {% else %}
+    class="hero is-medium has-text-centered" style="
     background-image:url('{{ page.image-url }}');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    {% endif %}">
-    <div class="hero-body">
+    background-size: cover; " {% endunless%}>
+    <div class=" hero-body">
         <h1 class="title has-text-white">
             {{ page.name }}
         </h1>

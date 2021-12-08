@@ -1,0 +1,11 @@
+---
+layout: page
+---
+
+{% for member in site.members %}
+<div class="box">
+    <h2 class="title is-2"><a href="{{ member.url | relative_url | append: '/' }}">{{ member.name }}</a></h2>
+    <h3 class="subtitle">{{ member.position }}</h3>
+    <p>{{ member.content }}</p>
+</div>
+{% endfor %}

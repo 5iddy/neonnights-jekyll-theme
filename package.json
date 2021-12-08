@@ -4,7 +4,10 @@
   "description": "A Neon Theme built upon Bulma CSS framwork for cyberpunks",
   "main": "_js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "bundle exec jekyll server --livereload",
+    "build-dev": "webpack build --watch",
+    "build": "NODE_ENV=production webpack build",
+    "clean": "rm -rf ./assets/js/*"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,13 @@
     "simple"
   ],
   "author": "Siddhu Yeturi",
-  "license": "ISC"
+  "license": "ISC",
+  "homepage": "https://github.com/5iddy/neonnights-jekyll#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1"
+  }
 }
