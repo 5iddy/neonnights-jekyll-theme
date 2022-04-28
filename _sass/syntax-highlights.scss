@@ -33,11 +33,11 @@ div.highlight {
 
   .err {
     color: $red;
-    background-color: $grey-darker;
+    background-color: $grey-dark;
   } // Error
 
   .k {
-    color: $turquoise;
+    color: $purple;
   } // Keyword
 
   .kn {
@@ -45,7 +45,7 @@ div.highlight {
   } // Keyword
 
   .o {
-    color: $cyan;
+    color: $purple;
   } // Operator
 
   .cm {
@@ -53,7 +53,7 @@ div.highlight {
   } // Comment.Multiline
 
   .cp {
-    color: $purple-light;
+    color: $purple;
   } // Comment.Preproc
 
   .c1 {
@@ -159,7 +159,7 @@ div.highlight {
     color: $magenta;
   } // Name.Exception
   .nf {
-    color: $yellow;
+    color: $cyan;
   } // Name.Function
   .nn {
     color: $magenta;
