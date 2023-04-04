@@ -51,16 +51,14 @@ whitelist:
   - jekyll-readme-index
   - jekyll-relative-links
 
-
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
-incremental: false 
-  
+incremental: false
+
 paginate: 5
 paginate_path: "/blog/page:num/"
-markdown: kramdown
 
 sass:
   sass_dir: _sass
@@ -100,7 +98,7 @@ compress_html:
     envs: development
 
 readme_index:
-  enabled:          true
+  enabled: true
   remove_originals: true
   with_frontmatter: false
 
